@@ -17,9 +17,7 @@ const App: React.FC = () => {
   };
 
   const deleteNote = (id: number) => {
-    setNotes((prevNotes) =>
-      prevNotes.filter((noteItem, index) => index !== id)
-    );
+    setNotes((prevNotes) => prevNotes.filter((_, index) => index !== id));
   };
 
   return (
